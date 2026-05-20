@@ -27,8 +27,9 @@ round_corner:
   
 #界面风格、功能开关
 style:
+  keyboard_padding_bottom: 50
   auto_caps: false #自動句首大寫:true|false|ascii
-  candidate_corner_radius: 12  #高亮候选背景圆角
+  candidate_corner_radius: 5  #高亮候选背景圆角
   candidate_font: han.ttf  #候选字体
   candidate_padding: 7  #候选项内边距
   candidate_spacing: 0.5  #候选间距
@@ -170,7 +171,6 @@ preset_color_schemes:
     author: 风花絮 #作者信息
     dark_scheme: abyss
     back_color: *color3 #候选区背景状态栏
-    candidate_separator_color: *color2 #候选分割背景
     candidate_text_color: *color1 #候选文本
     comment_text_color: *color1 #提示
     hilited_back_color: *color2 #高亮编码背景
@@ -534,8 +534,6 @@ liquid_keyboard:
     position: right  # 摆放位置（在滚动区域的……） top|bottom|left|right
     keys: # 按键（显示名称为对应的label，不能放太多）
       - liquid_keyboard_exit
-      - clipboard_window
-      - liquid_keyboard_tabs
       - space1
       - BackSpace1
       - Return2
@@ -669,7 +667,7 @@ liquid_keyboard:
     keys: [ 符号: '/fh', 电脑: '/dn', 象棋: '/xq', 麻将: '/mj', 骰子: '/sz', 扑克: '/pk', 天气: '/tq', 音乐: '/yy', 八卦: '/bg', 易经: '/lssg', 天体: '/tt',  星座: '/xz',  星号: '/xh',  方块: '/fk',  几何: '/jh',  箭头: '/jt',  数学: '/sx',  上标: '/sb',  下标: '/xb',  单位: '/dw',  货币: '/hb',  拼音: '/py',  注音: '/zy',  假名: '/jm',  片假: '/pjm',  韩文: '/hw',  希腊: '/xl',  希大: '/xld', 罗马:   '/lm',  罗大:   '/lmd', 俄语:   '/ey',  俄大:   '/eyd', 表情:  '/bq',  一: '/1',  二: '/2',  三: '/3',  四: '/4',  五: '/5',  六: '/6',  七: '/7',  八: '/8',  九: '/9',  零: '/0',  十: '/10',  分数: '/fs',  标点: '/bd',  偏旁: '/pp',  竖标:  '/bdz'  ]
 
 tool_bar:
-  button_spacing: 5 # 按钮间距
+  button_spacing: 20 # 按钮间距
   button_font: iconfont.ttf # 按钮字体
 
   # 左侧固定主按钮配置
@@ -707,7 +705,7 @@ tool_bar:
      # style: "ic@triangle-small-down"
      # style: "ic@chevron-down"
       normal: candidate_text_color
-      font_size: 14
+      font_size: 20
     action: Hide
 
   menu_button: &menu_button
@@ -783,27 +781,27 @@ preset_keyboards:
     label_transform: uppercase   #键盘字母转化为大写
     keys:
       #  第一行
-      - {click: q, popup: ["1", "Q-p", "q-p"], label_symbol: '1', swipe_down: '1', key_back_color: bh1, key_text_color: th1}
-      - {click: w, popup: ["2", "W-p", "w-p"], label_symbol: '2', swipe_down: '2', key_back_color: bh1, key_text_color: th1}
-      - {click: e, popup: ["3", "e-p", "E-p"], label_symbol: '3', swipe_down: '3', key_back_color: bh1, key_text_color: th1}
-      - {click: r, popup: ["4", "r-p", "R-p"], label_symbol: '4', swipe_down: '4', key_back_color: bh6, key_text_color: th1}
-      - {click: t, popup: ["5", "t-p", "T-p"], label_symbol: '5', swipe_down: '5', key_back_color: bh1, key_text_color: th1}
-      - {click: y, popup: ["6", "y-p", "Y-p"], label_symbol: '6', swipe_down: '6', key_back_color: bh1, key_text_color: th1}
-      - {click: u, popup: ["7", "u-p", "U-p"], label_symbol: '7', swipe_down: '7', key_back_color: bh1, key_text_color: th1}
-      - {click: i, popup: ["8", "i-p", "I-p"], label_symbol: '8', swipe_down: '8', key_back_color: bh1, key_text_color: th1}
-      - {click: o, popup: ["9", "o-p", "O-p"], label_symbol: '9', swipe_down: '9', key_back_color: bh1, key_text_color: th1}
-      - {click: p, popup: ["0", "p-p", "P-p"], label_symbol: '0', swipe_down: '0', key_back_color: bh1, key_text_color: th1}
+      - {click: q, popup: ["1", "Q-p", "q-p"], label_symbol: '1', swipe_up: '1', key_back_color: bh1, key_text_color: th1}
+      - {click: w, popup: ["2", "W-p", "w-p"], label_symbol: '2', swipe_up: '2', key_back_color: bh1, key_text_color: th1}
+      - {click: e, popup: ["3", "e-p", "E-p"], label_symbol: '3', swipe_up: '3', key_back_color: bh1, key_text_color: th1}
+      - {click: r, popup: ["4", "r-p", "R-p"], label_symbol: '4', swipe_up: '4', key_back_color: bh6, key_text_color: th1}
+      - {click: t, popup: ["5", "t-p", "T-p"], label_symbol: '5', swipe_up: '5', key_back_color: bh1, key_text_color: th1}
+      - {click: y, popup: ["6", "y-p", "Y-p"], label_symbol: '6', swipe_up: '6', key_back_color: bh1, key_text_color: th1}
+      - {click: u, popup: ["7", "u-p", "U-p"], label_symbol: '7', swipe_up: '7', key_back_color: bh1, key_text_color: th1}
+      - {click: i, popup: ["8", "i-p", "I-p"], label_symbol: '8', swipe_up: '8', key_back_color: bh1, key_text_color: th1}
+      - {click: o, popup: ["9", "o-p", "O-p"], label_symbol: '9', swipe_up: '9', key_back_color: bh1, key_text_color: th1}
+      - {click: p, popup: ["0", "p-p", "P-p"], label_symbol: '0', swipe_up: '0', key_back_color: bh1, key_text_color: th1}
     #  第二行
       - {width: 5, key_back_color: bh2, key_text_color: th2}
-      - {click: a, popup: ["select_all", A"-p", "a-p"], label_symbol: 'ic@checkbox-marked-outline', swipe_down: 'select_all', symbol_text_size: "8", key_symbol_offset_y: 3, key_back_color: bh2, key_text_color: th2}
-      - {click: s, popup: ["`", "s-p", "S-p"], label_symbol: '`', swipe_down: '`', key_back_color: bh2, key_text_color: th2}
-      - {click: d, popup: ["@", "d-p", "D-p"], label_symbol: '@', swipe_down: '@', key_back_color: bh2, key_text_color: th2}
-      - {click: f, popup: ["#", "f-p", "F-p"], label_symbol: '#', swipe_down: '#', key_back_color: bh2, key_text_color: th2}
-      - {click: g, popup: ["$", "g-p", "G-p"], label_symbol: '$', swipe_down: "$", key_back_color: bh2, key_text_color: th2}
-      - {click: h, popup: ["*", "h-p", "H-p"], label_symbol: '*', swipe_down: "*", key_back_color: bh2, key_text_color: th2}
-      - {click: j, popup: ["“”{Left}", "j-p", "J-p"], label_symbol: '“”', swipe_down: "“”{Left}", key_back_color: bh2, key_text_color: th2}
-      - {click: k, popup: ["(-)", "k-p", "K-p"], label_symbol: '()', swipe_down: "(){Left}", key_back_color: bh2, key_text_color: th2}
-      - {click: l, popup: ['\', "l-p", "L-p"], label_symbol: '\', swipe_down: '\', key_back_color: bh2, key_text_color: th2}
+      - {click: a, popup: ["select_all", A"-p", "a-p"], label_symbol: 'ic@checkbox-marked-outline', swipe_up: 'select_all', symbol_text_size: "8", key_symbol_offset_y: 3, key_back_color: bh2, key_text_color: th2}
+      - {click: s, popup: ["`", "s-p", "S-p"], label_symbol: '`', swipe_up: '`', key_back_color: bh2, key_text_color: th2}
+      - {click: d, popup: ["@", "d-p", "D-p"], label_symbol: '@', swipe_up: '@', key_back_color: bh2, key_text_color: th2}
+      - {click: f, popup: ["#", "f-p", "F-p"], label_symbol: '#', swipe_up: '#', key_back_color: bh2, key_text_color: th2}
+      - {click: g, popup: ["_", "g-p", "G-p"], label_symbol: '_', swipe_up: "_", key_back_color: bh2, key_text_color: th2}
+      - {click: h, popup: ["*", "h-p", "H-p"], label_symbol: '*', swipe_up: "*", key_back_color: bh2, key_text_color: th2}
+      - {click: j, popup: ["“”{Left}", "j-p", "J-p"], label_symbol: '“”', swipe_up: "“”{Left}", key_back_color: bh2, key_text_color: th2}
+      - {click: k, popup: ["(-)", "k-p", "K-p"], label_symbol: '()', swipe_up: "(){Left}", key_back_color: bh2, key_text_color: th2}
+      - {click: l, popup: ['\', "l-p", "L-p"], label_symbol: '\', swipe_up: '\', key_back_color: bh2, key_text_color: th2}
       - {width: 5, key_back_color: bh2, key_text_color: th2}
     #  第三行
       - {click: Shift_L, 
@@ -812,22 +810,22 @@ preset_keyboards:
       double_click: Shift_L3, 
       composing: delimiter, 
       width: 15, hilited_key_back_color: benter, key_text_size: "20", key_back_color: c1, key_text_color: th1, key_border: 0}
-      - {click: z, popup: ["Keyboard_bqrw1", "z-p", "Z-p"], label_symbol: '☻', swipe_down: 'Keyboard_bqrw1', key_back_color: bh3, key_text_color: th3}
-      - {click: x, popup: ["cut", "x-p", "X-p"], label_symbol: 'ic@content-cut', swipe_down: 'cut', symbol_text_size: "8", key_symbol_offset_y: 3, key_back_color: bh3, key_text_color: th3}
-      - {click: c, popup: ["copy", "c-p", "C-p"], label_symbol: 'ic@checkbox-multiple-blank-outline', swipe_down: 'copy', symbol_text_size: "8", key_symbol_offset_y: 3, key_back_color: bh3, key_text_color: th3}
-      - {click: v, popup: ["paste_clip", "v-p", "V-p"], label_symbol: 'ic@clipboard-text-outline', swipe_up: 'paste_clip', swipe_down: 'paste_clip', symbol_text_size: "8", key_symbol_offset_y: 3, key_back_color: bh3, key_text_color: th3}
-      - {click: b, popup: [";", "b-p", "B-p"], label_symbol: ';', swipe_down: ";", key_back_color: bh3, key_text_color: th3}
-      - {click: n, popup: [":", "n-p", "N-p"], label_symbol: ':', swipe_down: ':', key_back_color: bh3, key_text_color: th3}
-      - {click: m, popup: ["/", "m-p", "M-p"], label_symbol: '/', swipe_down: '/', key_back_color: bh3, key_text_color: th3}
-      - {click: BackSpace, width: 15, key_text_size: "18", key_back_color: c2, key_text_color: th1, key_border: 0}
+      - {click: z, popup: ["Keyboard_bqrw1", "z-p", "Z-p"], label_symbol: '☻', swipe_up: 'Keyboard_bqrw1', key_back_color: bh3, key_text_color: th3}
+      - {click: x, popup: ["cut", "x-p", "X-p"], label_symbol: 'ic@content-cut', swipe_up: 'cut', symbol_text_size: "8", key_symbol_offset_y: 3, key_back_color: bh3, key_text_color: th3}
+      - {click: c, popup: ["copy", "c-p", "C-p"], label_symbol: 'ic@checkbox-multiple-blank-outline', swipe_up: 'copy', symbol_text_size: "8", key_symbol_offset_y: 3, key_back_color: bh3, key_text_color: th3}
+      - {click: v, popup: ["paste", "v-p", "V-p"], label_symbol: 'ic@clipboard-text-outline', swipe_up: 'paste', symbol_text_size: "8", key_symbol_offset_y: 3, key_back_color: bh3, key_text_color: th3}
+      - {click: b, popup: [";", "b-p", "B-p"], label_symbol: ';', swipe_up: ";", key_back_color: bh3, key_text_color: th3}
+      - {click: n, popup: [":", "n-p", "N-p"], label_symbol: ':', swipe_up: ':', key_back_color: bh3, key_text_color: th3}
+      - {click: m, popup: ["/", "m-p", "M-p"], label_symbol: '/', swipe_up: '/', key_back_color: bh3, key_text_color: th3}
+      - {click: BackSpace, width: 15, key_text_size: "18", key_back_color: c2, key_text_color: th1, key_border: 0, swipe_left: 'Escape'}
     #  第四行
+      - {click: Keyboard_number, composing: '', long_click: , label_symbol: ' ', swipe_up: '', key_text_size: "18", key_symbol_offset_y: -4, symbol_text_size: 14, key_back_color: c4, key_text_color: tenter, key_border: 0, width: 15}
       - {
      # click: Keyboard_bqfh1, 
       click: liquid_keyboard_cn1, 
      # ascii: Keyboard_bqfh3-2, 
       ascii: liquid_keyboard_ascii1, 
-      composing: , long_click: , label_symbol: ' ', swipe_up: '', width: 15, key_text_size: "20", key_symbol_offset_x: 15, key_back_color: c3, key_text_color: tenter, key_border: 0}
-      - {click: Keyboard_number, composing: '', long_click: , label_symbol: ' ', swipe_up: '', key_text_size: "18", key_symbol_offset_y: -4, symbol_text_size: 14, key_back_color: c4, key_text_color: tenter, key_border: 0}
+      composing: , long_click: , label_symbol: ' ', swipe_up: '', key_text_size: "20", key_symbol_offset_x: 15, key_back_color: c3, key_text_color: tenter, key_border: 0}
       - {click: ',', label: '，', long_click: '!', popup: ["!", "Theme_settings"], swipe_up: '!', swipe_right: 'Theme_settings', key_back_color: bh4, key_text_color: th4}
       - {click: space, ascii: space3, long_click: , swipe_up: '', width: 30, key_text_size: "10", symbol_text_size: 9, key_symbol_offset_x: 35, key_back_color: bkg, key_text_color: th1}
       - {click: '.', label: '。', long_click: '?', popup: ["?", "Keyboard_func", "Color_switch"], swipe_up: '?', swipe_left: 'Color_switch', swipe_right: '', key_back_color: bh4, key_text_color: th4}
@@ -845,39 +843,35 @@ preset_keyboards:
   number:
     author: "暖暖"
     name: 数字+
-    width: 18
+    width: 22
    # height: 48
     ascii_mode: 1
     vertical_gap: 3
     keys:
       # 第一行
-      - {click: '%', long_click: '~', key_text_size: "12", key_text_size: "14", symbol_text_size: 14, key_symbol_offset_x: 17, key_back_color: bgn, key_text_color: th1, key_border: 0, width: 14}
-      - {click: '+', long_click: '±', key_text_size: "16", key_symbol_offset_x: 17, key_back_color: bgn, key_text_color: th1, key_border: 0, width: 14}
+      - {click: '+', long_click: '%', key_text_size: "16", key_symbol_offset_x: 17, key_back_color: bgn, key_text_color: th1, key_border: 0, width: 17}
       - {click: 1, key_text_color: th1}
       - {click: 2, key_text_color: th1}
       - {click: 3, key_text_color: th1}
-      - {click: Keyboard_last_lock, long_click: '', key_text_size: "20", key_symbol_offset_x: 17, key_back_color: bgn, key_text_color: 'th1', key_border: 0}
+      - {click: liquid_keyboard_ascii1, key_back_color: bgn, key_text_size: "18",key_text_color: th1, key_border: 0, width: 17}
       # 第二行
-      - {click: '_', long_click: '{}{Left}', key_symbol_offset_x: 17, key_back_color: bgn, key_text_color: th1, key_border: 0, width: 14}
-      - {click: '-', long_click: '@', key_text_size: "18", key_symbol_offset_x: 17, key_back_color: bgn, key_text_color: th1, key_border: 0, width: 14}
+      - {click: '-', long_click: '@', key_text_size: "18", key_symbol_offset_x: 17, key_back_color: bgn, key_text_color: th1, key_border: 0, width: 17}
       - {click: 4, key_text_color: th1}
       - {click: 5, key_text_color: th1}
       - {click: 6, key_text_color: th1}
-      - {click: space2, key_back_color: bgn, key_text_color: th1, key_text_size: "18", key_text_offset_y: , key_border: 0}
+      - {click: ., long_click: ',', key_back_color: bgn, key_text_color: th1, key_border: 0, width: 17}
       # 第三行
-      - {click: '<>{Left}', long_click: '[]{Left}', key_text_size: "14", key_symbol_offset_x: 17, key_back_color: bgn, key_text_color: th1, key_border: 0, width: 14}
-      - {click: '*', long_click: '&', key_text_size: "14", key_symbol_offset_x: 17, key_back_color: bgn, key_text_color: th1, key_border: 0, width: 14}
+      - {click: '*', long_click: '/', key_text_size: "14", key_symbol_offset_x: 17, key_back_color: bgn, key_text_color: th1, key_border: 0, width: 17}
       - {click: 7, long_click: cut, key_symbol_offset_x: 17, key_symbol_offset_y: 3, symbol_text_size: 9, key_text_color: th1}
       - {click: 8, long_click: copy, key_symbol_offset_x: 17, key_symbol_offset_y: 3, symbol_text_size: 10, key_text_color: th1}
-      - {click: 9, long_click: paste_clip, swipe_down: paste, symbol_text_size: 10, key_symbol_offset_x: 17, key_symbol_offset_y: 3, key_text_color: th1}
-      - {click: BackSpace, key_back_color: bgn, key_text_size: "18", key_text_color: th1, key_border: 0}
+      - {click: 9, long_click: paste, symbol_text_size: 10, key_symbol_offset_x: 17, key_symbol_offset_y: 3, key_text_color: th1}
+      - {click: BackSpace, key_back_color: bgn, key_text_size: "18", key_text_color: th1, key_border: 0, width: 17}
       # 第四行
-      - {click: liquid_keyboard_ascii1, key_back_color: bgn, key_text_size: "18",key_text_color: th1, key_border: 0, width: 14}
-      - {click: '/', long_click: '\', key_symbol_offset_x: 17, key_text_size: "14", key_back_color: bgn, key_text_color: th1, key_border: 0, width: 14}
-      - {click: '=', long_click: '≠', key_back_color: bgn, key_text_color: th1, key_border: 0}
+      - {click: Keyboard_last_lock, long_click: '', key_text_size: "20", key_symbol_offset_x: 17, key_back_color: bgn, key_text_color: 'th1', key_border: 0, width: 17}
+      - {click: '=', long_click: ':', key_back_color: bgn, key_text_color: th1, key_border: 0}
       - {click: 0, long_click: select_all, symbol_text_size: 9, key_symbol_offset_x: 17, key_symbol_offset_y: 3, key_text_color: th1}
-      - {click: ., long_click: ':', key_back_color: bgn, key_text_color: th1, key_border: 0}
-      - {click: Return, long_click: , key_text_size: "18", key_symbol_offset_x: 17, key_back_color: benter, key_text_color: tenter, key_border: 0}
+      - {click: space2, key_back_color: bgn, key_text_color: th1, key_text_size: "18", key_text_offset_y: , key_border: 0}
+      - {click: Return, long_click: , key_text_size: "18", key_symbol_offset_x: 17, key_back_color: benter, key_text_color: tenter, key_border: 0, width: 17}
       
   numberb:
     ascii_mode: 1
