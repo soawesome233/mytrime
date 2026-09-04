@@ -797,9 +797,9 @@ preset_keyboards:
       - {click: a, popup: ["select_all", "A-p", "a-p"], label_symbol: 'ic@checkbox-marked-outline', swipe_up: 'select_all', swipe_down: 'select_all', symbol_text_size: "8", key_symbol_offset_y: 3, key_back_color: bh2, key_text_color: th2}
       - {click: s, popup: ["`", "s-p", "S-p"], label_symbol: '`', swipe_up: '`', swipe_down: '`', key_back_color: bh2, key_text_color: th2}
       - {click: d, popup: ["@", "d-p", "D-p"], label_symbol: '@', swipe_up: '@', swipe_down: '@', key_back_color: bh2, key_text_color: th2}
-      - {click: f, popup: ["#", "f-p", "F-p"], label_symbol: '#', swipe_up: '#', swipe_down: '#', key_back_color: bh2, key_text_color: th2}
-      - {click: g, popup: ["$", "g-p", "G-p"], label_symbol: '$', swipe_up: '$', swipe_down: "$", key_back_color: bh2, key_text_color: th2}
-      - {click: h, popup: ["*", "h-p", "H-p"], label_symbol: '*', swipe_up: '*', swipe_down: "*", key_back_color: bh2, key_text_color: th2}
+      - {click: f, popup: ["%", "f-p", "F-p"], label_symbol: '%', swipe_up: '%', swipe_down: '%', key_back_color: bh2, key_text_color: th2}
+      - {click: g, popup: ["_", "g-p", "G-p"], label_symbol: '_', swipe_up: '_', swipe_down: "_", key_back_color: bh2, key_text_color: th2}
+      - {click: h, popup: ["-", "h-p", "H-p"], label_symbol: '-', swipe_up: '-', swipe_down: "-", key_back_color: bh2, key_text_color: th2}
       - {click: j, popup: ["“”{Left}", "j-p", "J-p"], label_symbol: '“”', swipe_up: '“”{Left}', swipe_down: "“”{Left}", key_back_color: bh2, key_text_color: th2}
       - {click: k, popup: ["(-)", "k-p", "K-p"], label_symbol: '()', swipe_up: '(){Left}', swipe_down: "(){Left}", key_back_color: bh2, key_text_color: th2}
       - {click: l, popup: ['\', "l-p", "L-p"], label_symbol: '\', swipe_up: '\', swipe_down: '\', key_back_color: bh2, key_text_color: th2}
