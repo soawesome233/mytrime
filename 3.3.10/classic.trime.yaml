@@ -818,7 +818,7 @@ preset_keyboards:
       - {click: b, popup: [";", "b-p", "B-p"], label_symbol: ';', swipe_up: ';', swipe_down: ";", key_back_color: bh3, key_text_color: th3}
       - {click: n, popup: [":", "n-p", "N-p"], label_symbol: ':', swipe_up: ':', swipe_down: ':', key_back_color: bh3, key_text_color: th3}
       - {click: m, popup: ["/", "m-p", "M-p"], label_symbol: '/', swipe_up: '/', swipe_down: '/', key_back_color: bh3, key_text_color: th3}
-      - {click: BackSpace, width: 15, key_text_size: "18", key_back_color: c2, key_text_color: th1, key_border: 0, swipe_left: 'Escape'}
+      - {click: BackSpace, width: 15, key_text_size: "18", key_back_color: c2, key_text_color: th1, key_border: 0, swipe_left: 'Escape', swipe_up: 'Delete'}
     #  第四行
       - {click: Keyboard_number, long_click: , label_symbol: ' ', swipe_up: '', swipe_down: '', key_text_size: "18", key_symbol_offset_y: -4, symbol_text_size: 14, key_back_color: c4, key_text_color: tenter, key_border: 0, width: 15}
       - {
